@@ -1,5 +1,11 @@
 # Simulador de préstamos
 
+Proyecto desarrollado como entrega final del curso de JavaScript en Coderhouse.
+
+## Demo
+
+[Ver proyecto](https://juanaliamid.github.io/pre-entrega-1-simulador-de-prestamos)
+
 ## Descripción:
 
 Este proyecto es un simulador de préstamos desarrollado en JavaScript. Permite registrar préstamos, calcular intereses según la cantidad de cuotas, listar préstamos otorgados, buscar por ID de cliente, eliminar préstamos a través de su ID, modificar cuotas y calcular el total general. Gestionar los datos de forma dinámica utilizando el DOM y almacenamiento local.
@@ -21,6 +27,14 @@ Este proyecto es un simulador de préstamos desarrollado en JavaScript. Permite 
 - Uso de librerías externas para mejorar la experiencia de usuario:
     - SweetAlert2 (confirmaciones)
     - Toastify (notificaciones)
+
+
+## Desafíos
+
+- Implementar una clase con métodos propios para encapsular la lógica de cálculo de cada préstamo
+- Manejar el contador de IDs correctamente al recuperar datos desde localStorage o JSON, usando `Math.max` para no repetir IDs
+- Generar dinámicamente el select y botón de edición solo cuando se encuentra un préstamo, sin tenerlos fijos en el HTML
+- Priorizar localStorage sobre el JSON para mantener los cambios del usuario entre sesiones
 
 ## Tecnologías utilizadas:
 
