@@ -4,7 +4,7 @@ Proyecto desarrollado como entrega final del curso de JavaScript en Coderhouse.
 
 ## Demo
 
-[Ver proyecto](https://juanaliamid.github.io/pre-entrega-1-simulador-de-prestamos)
+[Ver proyecto](https://juanaliamid.github.io/Simulador-de-prestamos/)
 
 ## Descripción:
 
