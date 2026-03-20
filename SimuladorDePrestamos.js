@@ -72,6 +72,18 @@ function estadoDeBoton () { // Si no hay prestamos el boton de mostrar listado d
     }
 }
 
+function notificacion (mensaje, color, colorTexto){ 
+    Toastify({
+        text: mensaje,
+        style: {
+            background: color,
+            color:colorTexto,
+        },
+        duration: 3000,
+        gravity: "right",
+        position: "right"
+    }).showToast();
+}
 //============================ FUNCIONES QUE MODIFICAN EL ARRAY ============================
 
 const agregarPrestamo = (nombre, monto, cuotas) => {
@@ -137,19 +149,6 @@ function guardadoDeDatos () {
 }
 
 //============================ FUNCIONES DE UI ============================
-
-function notificacion (mensaje, color, colorTexto){ 
-    Toastify({
-        text: mensaje,
-        style: {
-            background: color,
-            color:colorTexto,
-        },
-        duration: 3000,
-        gravity: "right",
-        position: "right"
-    }).showToast();
-}
 
 function buscarPorId () { 
     if (prestamos.length === 0) {
