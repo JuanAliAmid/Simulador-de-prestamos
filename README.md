@@ -1,6 +1,7 @@
 # Simulador de préstamos
 
 ## Descripción:
+Proyecto desarrollado como entrega final del curso de JavaScript en Coderhouse.
 
 Este proyecto es un simulador de préstamos desarrollado en JavaScript. Permite registrar préstamos, calcular intereses según la cantidad de cuotas, listar préstamos otorgados, buscar por ID de cliente, eliminar préstamos a través de su ID, modificar cuotas y calcular el total general. Gestionar los datos de forma dinámica utilizando el DOM y almacenamiento local.
 
