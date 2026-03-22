@@ -1,14 +1,24 @@
+body{
+
+    background-color: #0F172A;
+}
 main{
     display: flex;
     gap: 13px;
     flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
 }
 h1{
+    color: white;
     text-align: center;
     padding: 10px;
     transition: 0.3s;
 } 
-
+label{
+    color: #F1F5F9;
+}
 h1:hover{
     transform: scale(1.03);
 }
@@ -17,48 +27,77 @@ input{
     font-size: 15px;
     border-radius: 5px;
     border: 1px solid black;
-}
+    padding: 15px ;
+    width: auto;
+    background-color: white;
+} 
 select{
     font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 9px 12px;
+    width: auto;
+    background-color: white;
 }
+
 button{
     font-size: 15px;
 }
-.section-content{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 20px;
-    gap: 5px;
-    font-size: 10px;
-}
+
 .botones{
     border-radius: 10px;
     border: 1px solid black;
     transition: 0.3s;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    width: auto;
 }
 
 .botones:hover{
     transform: scale(1.03);
-    background: #8fc09b; 
+    background: #10B981; 
 }
 .botones:active{
     transform: scale(0.90);
+    background-color: #c9ada7;
 }
 
 .section-listar-total{
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     gap: 5px;
 }
-.section-agregar{
+
+.section-agregar, .section-buscar, .section-borrar {
     display: flex;
-    gap: 5px;
+    flex-direction: column;   /* apilado en vez de fila */
+    gap: 8px;
+    background: #1E293B;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 16px;
+    width: auto;
 }
 .select{
     transition: 0.3s;
+    width: auto;
+
 }
 .select:hover{
     transform: scale(1.03);
-    background: #a5cca7;
+    background: #10B981;
+}
+#resultado {
+    display: none;
+    font-size: 15px;
+    background: #1E293B;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+}
+#resultado p {
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
 }

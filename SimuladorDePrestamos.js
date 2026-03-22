@@ -140,6 +140,7 @@ function eliminarPorId(){
         }
     });
     inputId.value = '';
+    divResultado.style.display = 'block';
 }
 
 //============================ GUARDADO ============================
@@ -211,6 +212,7 @@ function buscarPorId () {
         
     })
     inputBuscarId.value = '';
+    divResultado.style.display = 'block';
 }
 
 function listado (){ //listado de prestamos
@@ -220,6 +222,7 @@ function listado (){ //listado de prestamos
         pHtml.textContent = `ID N°: ${a.id} | Nombre: ${a.nombre} | Total: $${a.total} | Cuotas: ${a.cuotas}`;
         divResultado.appendChild(pHtml); 
     })
+    divResultado.style.display = 'block';
 }
 
 function totalDePrestamos () {  // Muestra el total de todos los prestamos dados
@@ -230,6 +233,7 @@ function totalDePrestamos () {  // Muestra el total de todos los prestamos dados
 
     let totalGeneral = prestamos.reduce((a, b) => {return a + b.total},0);
     divResultado.textContent = `Total general de préstamos: $${totalGeneral}`;
+    divResultado.style.display = 'block';
 }
 
 //============================ JSON ============================
@@ -269,6 +273,10 @@ function inicioDeApp (){
     } else {
         data();
     }
+
+    if (prestamos.length === 0) {
+    divResultado.style.display = 'none';
+}
 }
 
 //============================ BOTONES ============================
@@ -296,13 +304,14 @@ btonAgregar.addEventListener('click', () => { // Carga los prestamos.
     inputNombre.value = '';
     inputMonto.value = ''; // Vacian los inputs para esperar nuevos ingresos.
     selectCuotas.value = '';
-
+    divResultado.style.display = 'block';
     estadoDeBoton(); // La invoco en esta posicion porque cambió el estado de los datos y depende del array actualizado.
 });
 
 btonListar.addEventListener('click', () => { 
     if (divResultado.innerHTML !== '') {
         divResultado.innerHTML = ''; // Si la lista no esta vacía, la vacío
+        divResultado.style.display = 'none';
     } else {     
         listado(); // Si está vacía, llamo a listado y muestro la lista 
     }
