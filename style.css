@@ -1,8 +1,9 @@
-body{
+body {
 
     background-color: #0F172A;
 }
-main{
+
+main {
     display: flex;
     gap: 13px;
     flex-direction: column;
@@ -10,28 +11,32 @@ main{
     margin: 0 auto;
     padding: 15px;
 }
-h1{
+
+h1 {
     color: white;
     text-align: center;
     padding: 10px;
     transition: 0.3s;
-} 
-label{
+}
+
+label {
     color: #F1F5F9;
 }
-h1:hover{
+
+h1:hover {
     transform: scale(1.03);
 }
 
-input{
+input {
     font-size: 15px;
     border-radius: 5px;
     border: 1px solid black;
-    padding: 15px ;
+    padding: 15px;
     width: auto;
     background-color: white;
-} 
-select{
+}
+
+select {
     font-size: 15px;
     border-radius: 5px;
     border: 1px solid black;
@@ -40,11 +45,11 @@ select{
     background-color: white;
 }
 
-button{
+button {
     font-size: 15px;
 }
 
-.botones{
+.botones {
     border-radius: 10px;
     border: 1px solid black;
     transition: 0.3s;
@@ -54,24 +59,28 @@ button{
     width: auto;
 }
 
-.botones:hover{
+.botones:hover {
     transform: scale(1.03);
-    background: #10B981; 
+    background: #10B981;
 }
-.botones:active{
+
+.botones:active {
     transform: scale(0.90);
     background-color: #c9ada7;
 }
 
-.section-listar-total{
+.section-listar-total {
     display: flex;
     justify-content: space-around;
     gap: 5px;
 }
 
-.section-agregar, .section-buscar, .section-borrar {
+.section-agregar,
+.section-buscar,
+.section-borrar {
     display: flex;
-    flex-direction: column;   /* apilado en vez de fila */
+    flex-direction: column;
+    /* apilado en vez de fila */
     gap: 8px;
     background: #1E293B;
     border: 1px solid black;
@@ -79,15 +88,18 @@ button{
     padding: 16px;
     width: auto;
 }
-.select{
+
+.select {
     transition: 0.3s;
     width: auto;
 
 }
-.select:hover{
+
+.select:hover {
     transform: scale(1.03);
     background: #10B981;
 }
+
 #resultado {
     display: none;
     font-size: 15px;
@@ -97,6 +109,7 @@ button{
     padding: 12px;
     color: white;
 }
+
 #resultado p {
     border-bottom: 1px solid black;
     padding-bottom: 8px;
